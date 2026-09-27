@@ -45,8 +45,8 @@ describe("Tool Call ID Normalization - Live Handoff", () => {
 	it.skipIf(!copilotToken || !openrouterKey)(
 		"github-copilot -> openrouter should normalize pipe-separated IDs",
 		async () => {
-			const copilotModel = getModel("github-copilot", "gpt-5.2-codex");
-			const openrouterModel = getModel("openrouter", "openai/gpt-5.2-codex");
+			const copilotModel = getModel("github-copilot", "gpt-5.3-codex");
+			const openrouterModel = getModel("openrouter", "openai/gpt-5.3-codex");
 
 			// Step 1: Generate tool call with github-copilot
 			const userMessage: Message = {
